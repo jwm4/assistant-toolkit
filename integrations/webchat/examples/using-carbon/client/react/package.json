@@ -6,10 +6,12 @@
     "node": "^16.15.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "cross-env DISABLE_ESLINT_PLUGIN=true react-scripts start"
   },
   "dependencies": {
     "@ibm-watson/assistant-web-chat-react": "^1.0.1",
+    "carbon-components": "^10.56.0",
+    "carbon-components-react": "^7.45.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
